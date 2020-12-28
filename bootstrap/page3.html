@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style3.css">
+	<style>
+		.
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="container-fluid container">
+	  <div class="row">
+		<div class="col-md-3 first-col">
+			<img src="logo.png"  class="logoStyle leftLogo" />
+		</div>
+		<div class="col-md-6">
+				<div id="login">
+					<div class="form">
+					  <div class="input-container top-input-border">
+						<i class="usernameIcon fa fa-user icon"></i>
+						<input class="input-field" type="text" placeholder="Username" id="username" name="username">
+						<label id="usernameErr" class="errorMessage message">Please enter valid username</label>
+					  </div>
+
+					  <div class="input-container bottom-input-border">
+						<i class="passwordIcon  fa fa-lock icon"></i>
+						<input class="input-field" type="text" placeholder="Password" id="password" name="password">
+						<label id="passwordErr" class="errorMessage message">Please enter valid password</label>
+					  </div>
+					 
+
+					  <!--<div>
+							<span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text forgotPass" href="#">Forgot
+							password?</a></span>
+							<span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
+						</div> -->
+						<div class="row">
+							<div class="col-md-6 col-xs-12 "><a class="small-text forgotPass" href="#">Forgot
+							password?</a></div>
+							<div class="col-md-6 col-xs-12 signIn"><input type="submit" value="Sign In"  onclick="submitForm();"></div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="col-md-3 third-col"  >
+			<img src="logo.png" class="logoStyle rightLogo" />
+		</div>
+	  </div>
+	</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

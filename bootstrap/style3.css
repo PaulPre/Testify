@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+
+@import url//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+* {box-sizing: border-box;}
+html {
+	height: 100%;
+	width: 100%;
+}
+
+div.main{
+    background: #0264d6; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0264d6 1%, #1c2b5a 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#0264d6), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0264d6 1%,#1c2b5a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0264d6', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+height:calc(100vh);
+width:100%;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+.container {
+  left: 50%;
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* ---------- LOGIN ---------- */
+
+#login .form{
+	margin-left : 40px;
+	margin-right : 40px;
+}
+/*#login, .logo{
+    display:inline-block;
+    width:40%;
+}
+#login{
+border-right:1px solid #fff;
+  padding: 0px 22px;
+  width: 59%; 
+}*/
+.logo{
+color:#fff;
+font-size:50px;
+  line-height: 125px;
+}
+
+#login form span.fa {
+	background-color: #fff;
+	border-radius: 3px 0px 0px 3px;
+	color: #000;
+	display: block;
+	float: left;
+	height: 50px;
+    font-size:24px;
+	line-height: 50px;
+	text-align: center;
+	width: 40px;
+}
+
+#login .form input {
+	height: 40px;
+}
+fieldset{
+    padding:0;
+    border:0;
+    margin: 0;
+
+}
+#login .form input[type="text"], input[type="password"] {
+	background-color: #fff;
+	border-radius: 0px 3px 3px 0px;
+	color: #000;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width : 89%;
+	
+}
+
+#login .form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #000000;
+  color: #eee;
+  font-weight: bold;
+  /* margin-bottom: 2em; */
+  text-transform: uppercase;
+  padding: 5px 10px;
+  height: 30px;
+  width: 110px;
+}
+
+#login .form input[type="submit"]:hover {
+	background-color: #d62e35;
+}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+
+
+
+.input-container {
+  display: -block; /* IE10 */
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #f4f8fb;
+  color: #0859bd;
+  /*min-width: 50px;*/
+  text-align: center;
+  height : 40px;
+  font-size: 20px;
+  width : 10%;
+  float : left;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+.top-input-border{
+	margin-top : 20px;
+}
+
+.third-col{
+	border-left: 1px solid #fff;
+	text-align: center;
+}
+.forgotPass{
+	color : #fff;
+}
+.logoStyle{
+	width: 200px;
+    margin-top: 30px;
+}
+.leftLogo{
+	display : none;
+}
+.rightLogo{
+	display : inline-block;
+}
+.first-col{
+	text-align : center
+}
+.signIn{
+	text-align : right;
+}
+.errorField{
+    border: 2px solid #e81515;
+}
+.errorFieldFa{
+    border: 2px solid #e81515;
+	border-right: none;
+}
+.errorMessage {
+    color: #ff312c !important;
+    display: none;
+}
+.icon.errorFieldFa{
+	color: #e81515;
+}
+.message{
+    font-size: 11px;
+	margin-top: -10px;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container{
+    left: 0;
+    position: inherit;
+    top: 0;
+    transform: none;
+  }
+  .leftLogo{
+	display : inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 150px;
+  }
+  .rightLogo{
+	display : none;
+  }
+  .third-col{
+	border : none ;
+  }
+  #login .form input[type="submit"]{
+	width : 100%;
+	height : 40px;
+	margin-top: 30px;
+  }
+  .bottom-input-border{
+	margin-bottom : 0px;
+  }
+  .message{
+	top : 63px;
+  }
+  .icon{
+	width : 12%;
+	padding : 10px;
+	font-size: 15px;
+  }
+  
+#login .form input[type="text"], input[type="password"] {
+	width : 87%;
+}
+}
